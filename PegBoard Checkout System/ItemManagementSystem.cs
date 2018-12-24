@@ -118,5 +118,14 @@ namespace PegBoard_Checkout_System
             Properties.Settings.Default.Reload();
         }
         
+        public static string GetName(string id)
+        {
+            foreach (string item in Properties.Settings.Default.Items)
+            {
+                string[] parts = item.Split('⎖');
+                if (parts[0] == id) return parts[1];
+            }
+            return null;
+        }
     }
 }

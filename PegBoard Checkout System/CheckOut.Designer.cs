@@ -28,99 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.lblMoment = new System.Windows.Forms.Label();
+            this.txtReason = new System.Windows.Forms.TextBox();
+            this.cbItem = new System.Windows.Forms.ComboBox();
+            this.lblReason = new System.Windows.Forms.Label();
+            this.lblItem = new System.Windows.Forms.Label();
+            this.dtpMoment = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // button2
+            // btnCheckOut
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(270, 174);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 42);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Check Out";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckOut.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.Location = new System.Drawing.Point(270, 174);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(134, 42);
+            this.btnCheckOut.TabIndex = 3;
+            this.btnCheckOut.Text = "Check Out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
-            // label4
+            // lblMoment
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 25);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Date";
+            this.lblMoment.AutoSize = true;
+            this.lblMoment.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoment.Location = new System.Drawing.Point(12, 132);
+            this.lblMoment.Name = "lblMoment";
+            this.lblMoment.Size = new System.Drawing.Size(104, 25);
+            this.lblMoment.TabIndex = 6;
+            this.lblMoment.Text = "Moment";
             // 
-            // textBox2
+            // txtReason
             // 
-            this.textBox2.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(122, 59);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 66);
-            this.textBox2.TabIndex = 1;
+            this.txtReason.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtReason.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReason.Location = new System.Drawing.Point(122, 59);
+            this.txtReason.Multiline = true;
+            this.txtReason.Name = "txtReason";
+            this.txtReason.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtReason.Size = new System.Drawing.Size(282, 66);
+            this.txtReason.TabIndex = 1;
             // 
-            // comboBox2
+            // cbItem
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(122, 12);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(282, 33);
-            this.comboBox2.TabIndex = 0;
+            this.cbItem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbItem.FormattingEnabled = true;
+            this.cbItem.Location = new System.Drawing.Point(122, 12);
+            this.cbItem.Name = "cbItem";
+            this.cbItem.Size = new System.Drawing.Size(282, 33);
+            this.cbItem.TabIndex = 0;
             // 
-            // label5
+            // lblReason
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 62);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 25);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Reason";
+            this.lblReason.AutoSize = true;
+            this.lblReason.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReason.Location = new System.Drawing.Point(12, 62);
+            this.lblReason.Name = "lblReason";
+            this.lblReason.Size = new System.Drawing.Size(91, 25);
+            this.lblReason.TabIndex = 5;
+            this.lblReason.Text = "Reason";
             // 
-            // label6
+            // lblItem
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 25);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Item";
+            this.lblItem.AutoSize = true;
+            this.lblItem.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItem.Location = new System.Drawing.Point(12, 15);
+            this.lblItem.Name = "lblItem";
+            this.lblItem.Size = new System.Drawing.Size(62, 25);
+            this.lblItem.TabIndex = 4;
+            this.lblItem.Text = "Item";
             // 
-            // dateTimePicker2
+            // dtpMoment
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.CustomFormat = "MM/dd/yyyy \'at\' hh:mm tt";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(122, 132);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(282, 31);
-            this.dateTimePicker2.TabIndex = 7;
+            this.dtpMoment.CalendarFont = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpMoment.CustomFormat = "MM/dd/yyyy \'at\' hh:mm tt";
+            this.dtpMoment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpMoment.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpMoment.Location = new System.Drawing.Point(122, 132);
+            this.dtpMoment.Name = "dtpMoment";
+            this.dtpMoment.ShowUpDown = true;
+            this.dtpMoment.Size = new System.Drawing.Size(282, 31);
+            this.dtpMoment.TabIndex = 2;
             // 
             // CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 228);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dtpMoment);
+            this.Controls.Add(this.btnCheckOut);
+            this.Controls.Add(this.lblMoment);
+            this.Controls.Add(this.txtReason);
+            this.Controls.Add(this.cbItem);
+            this.Controls.Add(this.lblReason);
+            this.Controls.Add(this.lblItem);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CheckOut";
             this.Text = "Check Out";
             this.Load += new System.EventHandler(this.CheckOut_Load);
@@ -131,12 +137,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Label lblMoment;
+        private System.Windows.Forms.TextBox txtReason;
+        private System.Windows.Forms.ComboBox cbItem;
+        private System.Windows.Forms.Label lblReason;
+        private System.Windows.Forms.Label lblItem;
+        private System.Windows.Forms.DateTimePicker dtpMoment;
     }
 }

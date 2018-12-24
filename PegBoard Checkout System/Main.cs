@@ -52,7 +52,7 @@ namespace PegBoard_Checkout_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new ItemLog().Show();
+            new ItemLog().ShowDialog();
         }
     }
 }

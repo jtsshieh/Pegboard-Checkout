@@ -56,6 +56,7 @@
             // 
             // txtStatus
             // 
+            this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStatus.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStatus.Location = new System.Drawing.Point(458, 27);
             this.txtStatus.Name = "txtStatus";
@@ -85,12 +86,13 @@
             // 
             // lbItems
             // 
+            this.lbItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbItems.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbItems.FormattingEnabled = true;
             this.lbItems.ItemHeight = 19;
             this.lbItems.Location = new System.Drawing.Point(12, 30);
             this.lbItems.Name = "lbItems";
-            this.lbItems.Size = new System.Drawing.Size(272, 270);
+            this.lbItems.Size = new System.Drawing.Size(272, 268);
             this.lbItems.TabIndex = 0;
             this.lbItems.SelectedValueChanged += new System.EventHandler(this.lbItems_SelectedValueChanged);
             // 
@@ -126,6 +128,7 @@
             // 
             // txtAction
             // 
+            this.txtAction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAction.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAction.Location = new System.Drawing.Point(759, 81);
             this.txtAction.Name = "txtAction";
@@ -135,6 +138,7 @@
             // 
             // txtReason
             // 
+            this.txtReason.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReason.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReason.Location = new System.Drawing.Point(759, 129);
             this.txtReason.Multiline = true;
@@ -146,6 +150,7 @@
             // 
             // txtTime
             // 
+            this.txtTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTime.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTime.Location = new System.Drawing.Point(759, 264);
             this.txtTime.Name = "txtTime";
@@ -155,12 +160,13 @@
             // 
             // lbLog
             // 
+            this.lbLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbLog.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLog.FormattingEnabled = true;
             this.lbLog.ItemHeight = 19;
             this.lbLog.Location = new System.Drawing.Point(458, 87);
             this.lbLog.Name = "lbLog";
-            this.lbLog.Size = new System.Drawing.Size(197, 213);
+            this.lbLog.Size = new System.Drawing.Size(197, 211);
             this.lbLog.TabIndex = 2;
             this.lbLog.SelectedValueChanged += new System.EventHandler(this.lbLog_SelectedValueChanged);
             // 
@@ -181,6 +187,9 @@
             this.Controls.Add(this.lblLog);
             this.Controls.Add(this.lblStatusLb);
             this.Controls.Add(this.lbItems);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ItemLog";
             this.Text = "ItemLog";
             this.Load += new System.EventHandler(this.ItemLog_Load);

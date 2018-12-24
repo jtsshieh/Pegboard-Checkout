@@ -49,12 +49,13 @@
             // 
             // lbItems
             // 
+            this.lbItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbItems.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbItems.FormattingEnabled = true;
             this.lbItems.ItemHeight = 19;
             this.lbItems.Location = new System.Drawing.Point(12, 30);
             this.lbItems.Name = "lbItems";
-            this.lbItems.Size = new System.Drawing.Size(272, 251);
+            this.lbItems.Size = new System.Drawing.Size(272, 249);
             this.lbItems.TabIndex = 0;
             this.lbItems.SelectedValueChanged += new System.EventHandler(this.lbItems_SelectedValueChanged);
             // 
@@ -90,14 +91,16 @@
             // 
             // txtName
             // 
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(496, 84);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(196, 33);
+            this.txtName.Size = new System.Drawing.Size(195, 33);
             this.txtName.TabIndex = 2;
             // 
             // txtID
             // 
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(495, 30);
             this.txtID.Name = "txtID";
@@ -106,10 +109,11 @@
             // 
             // txtLocation
             // 
+            this.txtLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLocation.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocation.Location = new System.Drawing.Point(496, 138);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(196, 33);
+            this.txtLocation.Size = new System.Drawing.Size(195, 33);
             this.txtLocation.TabIndex = 3;
             // 
             // btnAddEdit
@@ -162,6 +166,7 @@
             // 
             // txtDescription
             // 
+            this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescription.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.Location = new System.Drawing.Point(496, 189);
             this.txtDescription.Multiline = true;
@@ -229,6 +234,9 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lbItems);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ItemEditor";
             this.Text = "ItemEditor";
             this.Load += new System.EventHandler(this.ItemEditor_Load);

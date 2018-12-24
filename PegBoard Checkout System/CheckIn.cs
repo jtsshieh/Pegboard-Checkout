@@ -19,19 +19,34 @@ namespace PegBoard_Checkout_System
 
         private void CheckIn_Load(object sender, EventArgs e)
         {
-            comboBox2.Items.AddRange(ItemManagementSystem.GetNames().ToArray());
+            List<string> outItems = new List<string>();
+            List<string> inItems = new List<string>()
+;
+            foreach (string item in Properties.Settings.Default.ItemStatus)
+            {
+                string[] parts = item.Split('⎖');
+                string status = parts[1];
+                if (status == "Out") { outItems.Add(ItemManagementSystem.GetName(parts[0])); continue; }
+                inItems.Add(ItemManagementSystem.GetName(parts[0]));
+            }
+            foreach (string item in Properties.Settings.Default.Items)
+            {
+                string[] parts = item.Split('⎖');
+                if (outItems.Contains(parts[1])) { cbItem.Items.Add(parts[1]); continue; }
+                if (!inItems.Contains(parts[1])) cbItem.Items.Add(parts[1]);
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCheckIn_Click(object sender, EventArgs e)
         {
             foreach (string item in Properties.Settings.Default.Items)
             {
                 string[] data = item.Split('⎖');
                 string id = data[0];
                 string name = data[1];
-                if (name == comboBox2.Text)
+                if (name == cbItem.Text)
                 {
-                    ItemManagementSystem.CheckIn(id, textBox2.Text, dateTimePicker2.Text);
+                    ItemManagementSystem.CheckIn(id, txtReason.Text, dtpMoment.Text);
                     MessageBox.Show("Successfully Checked In " + name);
                     Close();
                     return;
